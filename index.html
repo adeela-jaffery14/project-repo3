@@ -3,17 +3,42 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/1ac93b5c5f.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
-		<title>Progress Steps</title>
+		<title>Rotating navigation</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container">
-
+		<div class="container show-nav">
+            <div class="circle-container">
+                <div class="circle">
+                    <button id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Demo Article</h1>
+                <small>Author's name</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, reiciendis a pariatur nostrum sequi alias, fugit explicabo corrupti dolores, odio eos id iure nihil quisquam mollitia ea earum saepe ab rem. Doloribus, quam aut placeat beatae quasi voluptates asperiores corporis. Harum, labore? Deleniti nobis, iusto necessitatibus adipisci sint numquam, quidem nam perspiciatis saepe sequi ea quos aperiam at quaerat laboriosam tempore laborum itaque exercitationem eius facere quibusdam aliquid! Voluptatibus aliquid sapiente at maxime, iste libero. Minima nobis quis porro voluptatibus laborum earum ipsum magni et, eveniet asperiores ea. Ducimus eum aspernatur voluptatibus praesentium quos maxime ad impedit accusamus consectetur sunt.</p>
+                <h3>Demo Picture: Beautiful scene from a beautiful city</h3>
+                <img src="https://raw.githubusercontent.com/adeela-jaffery14/Images-link/main/cyprus-3878425_1920.jpg"
+                alt="city old shops" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officiis quae adipisci voluptates autem nostrum, at magnam iusto rem dicta eaque quibusdam hic vitae deleniti qui magni. Fugiat vero velit expedita veniam ipsum, nobis modi aspernatur veritatis consequatur excepturi totam sunt, exercitationem fugit, suscipit odit laboriosam ratione eum maiores ad ex temporibus perspiciatis quod sequi. Laudantium pariatur debitis vel, mollitia eveniet sint voluptate rem assumenda veritatis porro tempore in at voluptatem aut aperiam impedit voluptas.</p>
+            </div>
 		</div>
-		
+		<nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li class="second"><i class="fa-regular fa-user"></i>About</li>
+                <li class="third"><i class="fa-regular fa-envelope"></i>Contact</li>
+            </ul>
+        </nav>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
