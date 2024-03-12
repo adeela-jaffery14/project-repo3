@@ -66,9 +66,14 @@ body {
     transform-origin: top left;
 }
 
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+    transition: transform 0.7s ease-in-out;
+}
+
 .container.show-nav + nav li { 
     transform: translateX(0);
-    transition-delay: 0.7s;
+    transition-delay: 0.5s;
 }
 
 nav { 
@@ -127,5 +132,10 @@ nav ul li + li + li {
 .content p {
     color: #333;
     line-height: 1.5;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: inherit;
 }
 
