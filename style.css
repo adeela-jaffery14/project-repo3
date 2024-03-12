@@ -66,6 +66,11 @@ body {
     transform-origin: top left;
 }
 
+.container.show-nav + nav li { 
+    transform: translateX(0);
+    transition-delay: 0.7s;
+}
+
 nav { 
     position: fixed;
     bottom: 40px;
@@ -83,12 +88,22 @@ nav ul li {
     text-transform: uppercase;
     color: #fff;
     margin: 40px 0;
-    /*transform: translateX(-120%);*/
+    transform: translateX(-120%);
     transition: transform 0.5s ease-in;
 }
 
 nav ul li i {
     margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 14px;
+    transform: translateX(-140%);
+}
+
+nav ul li + li + li {
+    margin-left: 28px;
+    transform: translateX(-170%);
 }
 
 .content img {
